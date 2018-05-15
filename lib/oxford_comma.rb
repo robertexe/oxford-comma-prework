@@ -6,9 +6,9 @@ def oxford_comma(array)
   elsif array.length == 3
     return "#{array[0]}, #{array[1]}, and #{array[2]}"
   else
-    last_word = array.pop.to_s
-    last_word = ", and #{last_word}"
-    output = "#{array.join(', ')}#{last_word}"
+    #last_word = array.pop.to_s
+    #last_word = ", and #{last_word}"
+    output = "#{array.join(', ')}, and #{array.pop}"
     return output
   end
 end
