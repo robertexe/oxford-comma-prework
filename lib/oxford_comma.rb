@@ -8,7 +8,7 @@ def oxford_comma(array)
   else
     last_word = array.pop.to_s
     last_word = ", and #{last_word}."
-    output = "#{array.join(',')}#{last_word}"
+    output = "#{array.join(', ')}#{last_word}"
     return output
   end
 end
